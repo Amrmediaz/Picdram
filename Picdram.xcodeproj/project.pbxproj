@@ -12,6 +12,10 @@
 		84CA329A231335D8005DC52C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CA3298231335D8005DC52C /* Main.storyboard */; };
 		84CA329C231335DA005DC52C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CA329B231335DA005DC52C /* Assets.xcassets */; };
 		84CA329F231335DA005DC52C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CA329D231335DA005DC52C /* LaunchScreen.storyboard */; };
+		84CA32AC23133C96005DC52C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA32AB23133C96005DC52C /* RegisterViewController.swift */; };
+		84CA32B023133EE2005DC52C /* ImagesCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA32AE23133EE2005DC52C /* ImagesCellTableViewCell.swift */; };
+		84CA32B323134234005DC52C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA32B223134234005DC52C /* ProfileViewController.swift */; };
+		84CA32B7231356B0005DC52C /* imageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CA32B5231356B0005DC52C /* imageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		84CA329B231335DA005DC52C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84CA329E231335DA005DC52C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84CA32A0231335DA005DC52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CA32AB23133C96005DC52C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		84CA32AE23133EE2005DC52C /* ImagesCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCellTableViewCell.swift; sourceTree = "<group>"; };
+		84CA32B223134234005DC52C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		84CA32B5231356B0005DC52C /* imageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = imageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		84CA3293231335D8005DC52C /* Picdram */ = {
 			isa = PBXGroup;
 			children = (
-				84CA3294231335D8005DC52C /* AppDelegate.swift */,
-				84CA3296231335D8005DC52C /* ViewController.swift */,
-				84CA3298231335D8005DC52C /* Main.storyboard */,
-				84CA329B231335DA005DC52C /* Assets.xcassets */,
+				84CA32AD23133EB8005DC52C /* xib */,
+				84CA32AA23133C0D005DC52C /* Model */,
+				84CA32A923133BFD005DC52C /* Controler */,
+				84CA32A823133BDF005DC52C /* View */,
 				84CA329D231335DA005DC52C /* LaunchScreen.storyboard */,
 				84CA32A0231335DA005DC52C /* Info.plist */,
 			);
 			path = Picdram;
+			sourceTree = "<group>";
+		};
+		84CA32A823133BDF005DC52C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84CA3298231335D8005DC52C /* Main.storyboard */,
+				84CA329B231335DA005DC52C /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84CA32A923133BFD005DC52C /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				84CA3294231335D8005DC52C /* AppDelegate.swift */,
+				84CA3296231335D8005DC52C /* ViewController.swift */,
+				84CA32AB23133C96005DC52C /* RegisterViewController.swift */,
+				84CA32B223134234005DC52C /* ProfileViewController.swift */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		84CA32AA23133C0D005DC52C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84CA32AD23133EB8005DC52C /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				84CA32AE23133EE2005DC52C /* ImagesCellTableViewCell.swift */,
+				84CA32B5231356B0005DC52C /* imageCell.xib */,
+			);
+			path = xib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CA32B7231356B0005DC52C /* imageCell.xib in Resources */,
 				84CA329F231335DA005DC52C /* LaunchScreen.storyboard in Resources */,
 				84CA329C231335DA005DC52C /* Assets.xcassets in Resources */,
 				84CA329A231335D8005DC52C /* Main.storyboard in Resources */,
@@ -135,6 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CA32AC23133C96005DC52C /* RegisterViewController.swift in Sources */,
+				84CA32B023133EE2005DC52C /* ImagesCellTableViewCell.swift in Sources */,
+				84CA32B323134234005DC52C /* ProfileViewController.swift in Sources */,
 				84CA3297231335D8005DC52C /* ViewController.swift in Sources */,
 				84CA3295231335D8005DC52C /* AppDelegate.swift in Sources */,
 			);
